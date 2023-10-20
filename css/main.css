@@ -1,0 +1,98 @@
+body {
+  font-family: "Comfortaa", arial, sans-serif;
+  background-color: #666666;
+  color: #fff;
+}
+
+#main-header #logo {
+  display: block;
+  height: 90px;
+  margin-top: 35px;
+  max-width: 85px;
+  z-index: 333;
+}
+
+@media screen and (min-width: 1920px) {
+  #logo {
+    height: 90px;
+    width: 165px;
+  }
+}
+#main-footer {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  margin-top: 450px;
+}
+#main-footer p {
+  font-size: 10px;
+  margin-left: 15px;
+}
+#main-footer a {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1920px) {
+  #main-footer {
+    height: 75px;
+    margin-top: 500px;
+  }
+  #main-footer p {
+    font-size: 15px;
+  }
+  #main-footer a {
+    margin-right: 30px;
+  }
+}
+#intro {
+  margin-top: 100px;
+}
+#intro p {
+  line-height: 50px;
+  font-size: 15px;
+  margin-left: 30px;
+}
+#intro #main-nav {
+  margin-top: 150px;
+}
+#intro #main-nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+#intro #main-nav li {
+  margin-right: 20px;
+}
+#intro #main-nav li #left {
+  background-color: #00A1F1;
+}
+#intro #main-nav li #middle {
+  background-color: #0099CC;
+}
+#intro #main-nav li #right {
+  background-color: #0078D4;
+}
+#intro #main-nav li:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.3) inset;
+}
+
+#main-nav a {
+  display: block;
+  text-align: center;
+  line-height: 5;
+  width: 80px;
+  height: 50px;
+  color: #fff;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1920px) {
+  #main-nav a {
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    line-height: 3;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=main.css.map */
