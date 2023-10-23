@@ -1,0 +1,20 @@
+<model-viewer src="earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" autoplay>
+    <button class="Hotspot" slot="hotspot-6" data-surface="1 0 83 275 273 0.311 0.329 0.361" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">right</div>
+    </button><button class="Hotspot" slot="hotspot-7" data-surface="0 0 43 42 17 0.329 0.380 0.290" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">button</div>
+    </button><button class="Hotspot" slot="hotspot-8" data-surface="2 0 13 22 8 0.217 0.330 0.453" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">earbud</div>
+    </button><button class="Hotspot" slot="hotspot-9" data-surface="3 0 8327 2034 8320 0.391 0.370 0.239" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">cup</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
