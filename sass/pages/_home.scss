@@ -1,73 +1,10 @@
 @use '../abstracts' as a;
 
-#intro {
-    margin-top: 100px;
-
-    p{
-        line-height: 50px;
-        font-size: 15px;
-        margin-left: 30px;
-    }
-    
-    #main-nav{
-        margin-top: 150px;
-    }
-
-    #main-nav ul {
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-
-    }
-
-
-    #main-nav li {
-        #left{        
-            background-color: a.$left-color;      
-        }
-        #middle{
-            background-color: a.$middle-color;      
-        }
-        #right{
-            background-color: a.$right-color;      
-        }
-
-        margin-right: 20px;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        &:hover {
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),  2px 2px 5px rgba(0, 0, 0, 0.3)inset
-        }}
-    }
-
-    #main-nav a{
-        display: block;
-        text-align: center;
-        line-height: 5;
-        width: 80px;
-        height: 50px;
-
-        color: #fff;
-        font-size: 10px;
-        text-decoration: none;
-
-}
 
 
 
-@media screen and (min-width: 1920px) {
-
-    #main-nav a{
-        width: 120px;
-        height: 50px;
-        text-align: center;
-        line-height: 3;
-        font-size: 15px;
-    }
+// @media screen and (min-width: 1920px) {
 
 
     
-
-    
-}
+// }
