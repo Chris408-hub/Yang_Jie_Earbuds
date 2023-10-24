@@ -4,13 +4,53 @@
   const model = document.querySelector("#model");
   const hotspots = document.querySelectorAll(".Hotspot");
 
+  const infoBoxes = [
+    {
+      title: "Left-Right Identification",
+      text: "Easily distinguish between the left and right sides of the headphones to ensure correct positioning for optimal audio quality.",
+      image: "images/poster.jpg"
+    },
+    {
+      title: "Playback Control & Volume Adjustment",
+      text: "This multifunctional hotspot allows you to pause playback with a single press and adjust the volume by pressing and holding. It provides seamless control over your audio experience."
+    },
+    {
+      title: "Headphone Unit",
+      text: " The headphone unit itself serves as the core of your audio experience, delivering high-quality sound and comfortable wear."
+    },
+        {
+      title: "Earphone Caps",
+      text: "The Earphone Caps are removable and customizable, allowing you to personalize your headphones with different designs or materials to suit your style."
+    }
+
+  ]
+
+
   //functions
   function modelLoaded() {
-    //console.log(hotspots);
+    console.log(hotspots);
     hotspots.forEach(hotspot => {
       hotspot.style.display = "block";
     });
   }
+
+  function loadInfo() {
+    infoBoxes.forEach((infoBox, index) => {
+      let selected = document.querySelector(`#hotspot-${index + 1}`);
+
+      let h2 =document.createElement("h2");
+      h2.textContent = infoBox.title;
+
+
+      let p = document.createElement("p");
+      p.textContent = infoBox.text;
+
+      selected.appendChild(h2);
+      selected.appendChild(p);
+      
+    })
+  }
+  loadInfo();
 
   function showInfo() {
     //console.log(this.slot);
