@@ -8,35 +8,40 @@
   </head>
   <body>
     <!-- <model-viewer> HTML element -->
-    <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+    <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+
       <button class="Hotspot" slot="hotspot-1" data-surface="1 0 83 275 273 0.311 0.329 0.361" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">
-            right
+          <div class="HotspotAnnotation" id="hotspot-1">
+            <h2>Left-Right Identification</h2>
+            <p>Easily distinguish between the left and right sides of the headphones to ensure correct positioning for optimal audio quality.</p>
           </div>
       </button><button class="Hotspot" slot="hotspot-2" data-surface="0 0 43 42 17 0.329 0.380 0.290" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">
-            button
+          <div class="HotspotAnnotation" id="hotspot-2">
+            <h2>Playback Control & Volume Adjustment</h2>
+            <p>This multifunctional hotspot allows you to pause playback with a single press and adjust the volume by pressing and holding. It provides seamless control over your audio experience.</p>
           </div>
       </button><button class="Hotspot" slot="hotspot-3" data-surface="2 0 13 22 8 0.217 0.330 0.453" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">
-            earbud
+          <div class="HotspotAnnotation" id="hotspot-3">
+            <h2>Headphone Unit</h2>
+            <p>The headphone unit itself serves as the core of your audio experience, delivering high-quality sound and comfortable wear.</p>
           </div>
       </button><button class="Hotspot" slot="hotspot-4" data-surface="3 0 8327 2034 8320 0.391 0.370 0.239" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">
-            cup
+          <div class="HotspotAnnotation" id="hotspot-4">
+            <h2>Earphone Caps</h2>
+            <p>The Earphone Caps are removable and customizable, allowing you to personalize your headphones with different designs or materials to suit your style.</p>
           </div>
       </button>
+
       <!-- <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
       </div>
       <button slot="ar-button" id="ar-button">
           View in your space
       </button> -->
-      <div id="ar-prompt">
+      <!-- <div id="ar-prompt">
           <img src="images/ar_hand_prompt.png">
-      </div>
+      </div> -->
     </model-viewer>  
-    <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
