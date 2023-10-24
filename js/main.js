@@ -8,19 +8,22 @@
     {
       title: "Left-Right Identification",
       text: "Easily distinguish between the left and right sides of the headphones to ensure correct positioning for optimal audio quality.",
-      image: "images/poster.jpg"
+      image: "images/right.jpg"
     },
     {
       title: "Playback Control & Volume Adjustment",
-      text: "This multifunctional hotspot allows you to pause playback with a single press and adjust the volume by pressing and holding. It provides seamless control over your audio experience."
+      text: "This multifunctional hotspot allows you to pause playback with a single press and adjust the volume by pressing and holding. It provides seamless control over your audio experience.",
+      image: "images/button.jpg"
     },
     {
       title: "Headphone Unit",
-      text: " The headphone unit itself serves as the core of your audio experience, delivering high-quality sound and comfortable wear."
+      text: " The headphone unit itself serves as the core of your audio experience, delivering high-quality sound and comfortable wear.",
+      image: "images/earbud.jpg"
     },
         {
       title: "Earphone Caps",
-      text: "The Earphone Caps are removable and customizable, allowing you to personalize your headphones with different designs or materials to suit your style."
+      text: "The Earphone Caps are removable and customizable, allowing you to personalize your headphones with different designs or materials to suit your style.",
+      image: "images/cap.jpg"
     }
 
   ]
@@ -45,8 +48,13 @@
       let p = document.createElement("p");
       p.textContent = infoBox.text;
 
+      let img = document.createElement("img");
+      img.src = infoBox.image;
+      
+
       selected.appendChild(h2);
       selected.appendChild(p);
+      selected.appendChild(img);
       
     })
   }
