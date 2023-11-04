@@ -4,44 +4,134 @@
     <title>Loop EarBuds</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet"/>
   </head>
   <body>
-    <!-- <model-viewer> HTML element -->
-    <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+    <header class="grid-con" id="main-header">
+      <div id="logo" class="box col-start-1 col-end-2 m-col-start-1 m-col-end-3 xl-col-start-1 xl-col-end-2">
+      <!-- <a href="index.html"><img src="" alt="logo"></a> -->
+      logo</div>
+      <nav id="main-nav" class="box col-start-4 col-end-4 m-col-start-10 m-col-end-12">
+      <!-- <h2 class="hidden">Main Navigation</h2>
+      <div id="burger-con">
+          <ul id="burger-menu">
+              <li><a href="find.html"><img src="" alt="search"></a></li>
+              <li><a href="shop.html"><img src="" alt="shopping cart"></a></li>
+              <li><a href="account.html"><img src="" alt="account"></a></li>
+          </ul>
+       </div> -->       
+      menu</nav>
+    </header>
 
-      <button class="Hotspot" slot="hotspot-1" data-surface="1 0 83 275 273 0.311 0.329 0.361" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation" id="hotspot-1">
-            <!-- <h2>Left-Right Identification</h2>
-            <p>Easily distinguish between the left and right sides of the headphones to ensure correct positioning for optimal audio quality.</p> -->
-          </div>
-      </button><button class="Hotspot" slot="hotspot-2" data-surface="0 0 43 42 17 0.329 0.380 0.290" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation" id="hotspot-2">
-            <!-- <h2>Playback Control & Volume Adjustment</h2>
-            <p>This multifunctional hotspot allows you to pause playback with a single press and adjust the volume by pressing and holding. It provides seamless control over your audio experience.</p> -->
-          </div>
-      </button><button class="Hotspot" slot="hotspot-3" data-surface="2 0 13 22 8 0.217 0.330 0.453" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation" id="hotspot-3">
-            <!-- <h2>Headphone Unit</h2>
-            <p>The headphone unit itself serves as the core of your audio experience, delivering high-quality sound and comfortable wear.</p> -->
-          </div>
-      </button><button class="Hotspot" slot="hotspot-4" data-surface="3 0 8327 2034 8320 0.391 0.370 0.239" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation" id="hotspot-4">
-            <!-- <h2>Earphone Caps</h2>
-            <p>The Earphone Caps are removable and customizable, allowing you to personalize your headphones with different designs or materials to suit your style.</p> -->
-          </div>
-      </button>
+    <section id="hero" class="box full-width-grid-con">
+      <h2>products images</h2>
+      <!-- <img src=""> -->
+    </section>
 
-      <!-- <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
+    <section id="video" class="grid-con">
+      <h2 class="hidden">video</h2>
+      <h2 class="box col-span-full m-col-span-full xl-col-start-2 xl-col-end-5">Discover LOOP</h2>
+      <div id="video-con" class="box col-span-full m-col-span-full xl-col-start-6 xl-col-end-12">
+        <!-- <video src="video/" controls></video> -->
+      video</div>
+    </section>
+
+    <section id="hot-spot" class="grid-con">
+      <h2 class="hidden">hot-spot description</h2>
+      <h2 class="box col-span-full m-col-start-1 m-col-end-10 xl-col-start-2 xl-col-end-9">Take a look around the LOOP headphones</h2>
+      <!-- <model-viewer> HTML element -->
+      <div id="model" class="box col-span-full" >hot-spot</div>
+      <!-- <model-viewer id="model" src="" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+
+        <button class="Hotspot" slot="hotspot-1" data-surface="1 0 83 275 273 0.311 0.329 0.361" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-1"></div>
+        </button><button class="Hotspot" slot="hotspot-2" data-surface="0 0 43 42 17 0.329 0.380 0.290" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-2"></div>
+        </button><button class="Hotspot" slot="hotspot-3" data-surface="2 0 13 22 8 0.217 0.330 0.453" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-3"></div>
+        </button><button class="Hotspot" slot="hotspot-4" data-surface="3 0 8327 2034 8320 0.391 0.370 0.239" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-4"></div>
+        </button>
+      </model-viewer> -->
+      <div id="features" class="box col-span-full">
+        <!-- <p>High-Quality Sound</p><div class="vertical-line"></div>
+        <p>Active Noise Cancellation</p><div class="vertical-line"></div>
+        <p>Waterproof Design</p> -->
+      features</div>
+    </section>  
+    
+    <section id="x-ray">
+      <h2 class="hidden">products x-ray slider</h2>
+      <div id="img-x-ray" class="box full-width-grid-con">
+        <img src="" alt="x-ray">
       </div>
-      <button slot="ar-button" id="ar-button">
-          View in your space
-      </button> -->
-      <!-- <div id="ar-prompt">
-          <img src="images/ar_hand_prompt.png">
-      </div> -->
-    </model-viewer>  
+      <div id="x-ray-intro" class="">
+        <div id="chip" class="grid-con">
+          <img src="" alt="chip" class="box col-start-1 col-end-2 m-col-start-3 m-col-end-4">
+          <p class="box col-start-3 col-end-4 m-col-start-6 m-col-end-12">chip intro</p>
+        </div>
+        <div id="battery" class="grid-con">
+          <img src="" alt="battery" class="box col-start-1 col-end-2 m-col-start-3 m-col-end-4">
+          <p class="box col-start-3 col-end-4 m-col-start-6 m-col-end-12">battery intro</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="animation" class="grid-con">
+      <div class="box col-start-2 col-end-3 m-col-start5 m-col-end-8">
+        <!-- <img src="" alt=""> -->
+      img</div>
+      <div id="left-text" class="box col-start-1 col-end-4">left-text<p></p><br><p></p><br><p></p></div>
+      <div id="right-text" class="box col-start-9 col-end-12">right-text<p></p><br><p></p><br><p></p></div>
+ 
+    </section>
+    
+    <footer id="footer" class="grid-con">
+      <div id="sign-up" class="box col-span-full m-col-start-4 m-col-end-9">
+        <!-- <p></p>
+        <div id="email" class="">
+          <input type="email">
+          <button type="submit" id="footer-btn">Sign-up</button>
+        </div> -->
+      sign-up</div>
+
+      <nav id="footer-nav" class="grid-con">
+        <div id="support" class="box m-col-start-3 m-col-end-4">
+          <!-- <ul>
+            <li><a href="#">Shipping policy</a></li>
+            <li><a href="#">Return & exchange</a></li>
+            <li><a href="#">Product support</a></li>
+          </ul>  -->
+        support</div>   
+        <div id="About-us" class="box m-col-start-6 m-col-end-7">
+          <!-- <ul>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookie policy</a></li>
+            <li><a href="#">Terms & conditions</a></li>
+          </ul>  -->
+        About-us</div> 
+        <div id="Contact-us" class="box m-col-start-9 m-col-end-10">
+          <!-- <p>519-719-1993</p><br>
+          <p>Monday- Friday<br>8:30am - 5:30pm</p> -->
+        Contact</div> 
+
+      </nav>
+
+      <a class="box col-start-1 col-end-2 m-col-start-1 m-col-end-3" href="#"><p id="copyright">2023copyright©Loop</p></a>
+
+      <div id="social-con" class="box col-start-3 col-end-4 m-col-start-10 m-col-end-12">
+        <!-- <ul>
+          <li><a href="#"><img src="images/twitter.svg" alt=""></a></li>
+          <li><a href="#"><img src="images/in.svg" alt=""></a></li>
+          <li><a href="#"><img src="images/insta.svg" alt=""></a></li>
+        </ul> -->
+      social media icon</div>
+    </footer>
     <!-- Loads <model-viewer> for browsers: -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
