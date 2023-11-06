@@ -8,7 +8,7 @@
     {
       title: "Left-Right Identification",
       text: "Easily distinguish between the left and right sides of the headphones to ensure correct positioning for optimal audio quality.",
-      image: "images/right.jpg"
+      image: "images/left.jpg"
     },
     {
       title: "Playback Control & Volume Adjustment",

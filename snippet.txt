@@ -1,12 +1,12 @@
-<model-viewer src="earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" autoplay>
-    <button class="Hotspot" slot="hotspot-6" data-surface="1 0 83 275 273 0.311 0.329 0.361" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation">right</div>
-    </button><button class="Hotspot" slot="hotspot-7" data-surface="0 0 43 42 17 0.329 0.380 0.290" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation">button</div>
-    </button><button class="Hotspot" slot="hotspot-8" data-surface="2 0 13 22 8 0.217 0.330 0.453" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation">earbud</div>
-    </button><button class="Hotspot" slot="hotspot-9" data-surface="3 0 8327 2034 8320 0.391 0.370 0.239" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation">cup</div>
+<model-viewer src="earbudsfinal.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1">
+    <button class="Hotspot" slot="hotspot-2" data-position="-149.33284568722837m 252.49204696555853m 9.621595544963554m" data-normal="-0.012088690866540611m 0.9999268393103505m 0.00042376874069181744m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Left-Right Identification</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="-160.12475612769205m 250.5487271670387m 39.3670431432447m" data-normal="0.000800540676760726m 0.9999919315677883m -0.0039364875141087744m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Playback Control &amp; Volume Adjustment</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="-150.93116700198988m 210.5690859310705m 92.09691469624897m" data-normal="-0.060442760225086954m 0.09364521680188066m 0.9937692116917798m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Headphone Unit</div>
+    </button><button class="Hotspot" slot="hotspot-5" data-position="-197.10183812480415m 83.52688469080668m 45.1432805486055m" data-normal="0.0729145522580604m -0.12632995491074606m 0.989304912835904m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Earphone Caps</div>
     </button>
     <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>

@@ -1,7 +1,7 @@
 model-viewer {
   width: auto;
-  max-width: 1200px;
-  height: 700px;
+  max-width: 1920px;
+  height: 1000px;
   background-color: #efefef;
   margin: 0 auto;
 }
@@ -98,25 +98,12 @@ model-viewer > #ar-prompt > img {
   background-color: #000;
 }
 
-#footer-nav #support, #footer-nav #About-us {
-  display: none;
+@media screen and (max-width: 767px) {
+  #footer-nav #support, #footer-nav #about-us {
+    display: none;
+  }
 }
-
-
 img {
   width: 300px;
   height: 150px;
 }
-
-/* @media screen and(min-width:768px) {
-    
-#footer-nav #support {
-
-  display: block;
-  }
-
-#footer-nav #About-us {
-  display: block;
-  }
-
-} */

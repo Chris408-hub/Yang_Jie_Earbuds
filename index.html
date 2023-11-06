@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
-    <header class="grid-con" id="main-header">
+    <header id="main-header" class="grid-con" >
       <div id="logo" class="box col-start-1 col-end-2 m-col-start-1 m-col-end-3 xl-col-start-1 xl-col-end-2">
       <!-- <a href="index.html"><img src="" alt="logo"></a> -->
       logo</div>
@@ -41,22 +41,24 @@
     </section>
 
     <section id="hot-spot" class="grid-con">
-      <h2 class="hidden">hot-spot description</h2>
       <h2 class="box col-span-full m-col-start-1 m-col-end-10 xl-col-start-2 xl-col-end-9">Take a look around the LOOP headphones</h2>
       <!-- <model-viewer> HTML element -->
-      <div id="model" class="box col-span-full" >hot-spot</div>
-      <!-- <model-viewer id="model" src="" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+      <div class="box col-span-full">
+        <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+          <button class="Hotspot" slot="hotspot-1" data-position="-149.33284568722837m 252.49204696555853m 9.621595544963554m" data-normal="-0.012088690866540611m 0.9999268393103505m 0.00042376874069181744m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-1"></div></button>
+          <button class="Hotspot" slot="hotspot-2" data-position="-160.12475612769205m 250.5487271670387m 39.3670431432447m" data-normal="0.000800540676760726m 0.9999919315677883m -0.0039364875141087744m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-2"></div>
+          </button>
+          <button class="Hotspot" slot="hotspot-3" data-position="-150.93116700198988m 210.5690859310705m 92.09691469624897m" data-normal="-0.060442760225086954m 0.09364521680188066m 0.9937692116917798m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-3"></div>
+          </button>
+          <button class="Hotspot" slot="hotspot-4" data-position="-197.10183812480415m 83.52688469080668m 45.1432805486055m" data-normal="0.0729145522580604m -0.12632995491074606m 0.989304912835904m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-4"></div>
+          </button>
+        </model-viewer> 
+      </div>
 
-        <button class="Hotspot" slot="hotspot-1" data-surface="1 0 83 275 273 0.311 0.329 0.361" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-1"></div>
-        </button><button class="Hotspot" slot="hotspot-2" data-surface="0 0 43 42 17 0.329 0.380 0.290" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-2"></div>
-        </button><button class="Hotspot" slot="hotspot-3" data-surface="2 0 13 22 8 0.217 0.330 0.453" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-3"></div>
-        </button><button class="Hotspot" slot="hotspot-4" data-surface="3 0 8327 2034 8320 0.391 0.370 0.239" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-4"></div>
-        </button>
-      </model-viewer> -->
       <div id="features" class="box col-span-full">
         <!-- <p>High-Quality Sound</p><div class="vertical-line"></div>
         <p>Active Noise Cancellation</p><div class="vertical-line"></div>
@@ -69,68 +71,71 @@
       <div id="img-x-ray" class="box full-width-grid-con">
         <img src="" alt="x-ray">
       </div>
-      <div id="x-ray-intro" class="">
+      <div id="x-ray-intro">
         <div id="chip" class="grid-con">
-          <img src="" alt="chip" class="box col-start-1 col-end-2 m-col-start-3 m-col-end-4">
-          <p class="box col-start-3 col-end-4 m-col-start-6 m-col-end-12">chip intro</p>
+          <img src="" alt="chip" class="box col-start-1 col-end-2 m-col-start-3 m-col-end-5">
+          <p class="box col-start-2 col-end-5 m-col-start-6 m-col-end-12">chip intro</p>
         </div>
         <div id="battery" class="grid-con">
-          <img src="" alt="battery" class="box col-start-1 col-end-2 m-col-start-3 m-col-end-4">
-          <p class="box col-start-3 col-end-4 m-col-start-6 m-col-end-12">battery intro</p>
+          <img src="" alt="battery" class="box col-start-1 col-end-2 m-col-start-3 m-col-end-5">
+          <p class="box col-start-2 col-end-5 m-col-start-6 m-col-end-12">battery intro</p>
         </div>
 
       </div>
     </section>
 
     <section id="animation" class="grid-con">
-      <div class="box col-start-2 col-end-3 m-col-start5 m-col-end-8">
+
+      <div id="left-text" class="box col-start-1 col-end-2 m-col-start-1 m-col-end-5">left-text<p></p><br><p></p><br><p></p></div>
+      <div class="box col-start-2 col-end-3 m-col-start-5 m-col-end-8">
         <!-- <img src="" alt=""> -->
       img</div>
-      <div id="left-text" class="box col-start-1 col-end-4">left-text<p></p><br><p></p><br><p></p></div>
-      <div id="right-text" class="box col-start-9 col-end-12">right-text<p></p><br><p></p><br><p></p></div>
+      <div id="right-text" class="box col-start-3 col-end-4 m-col-start-8 m-col-end-12">right-text<p></p><br><p></p><br><p></p></div>
  
     </section>
     
-    <footer id="footer" class="grid-con">
-      <div id="sign-up" class="box col-span-full m-col-start-4 m-col-end-9">
-        <!-- <p></p>
-        <div id="email" class="">
-          <input type="email">
+    <footer id="footer">
+      <div id="sign-up"  class="grid-con">
+        <p></p>
+        <div id="email" class="box col-span-full m-col-start-4 m-col-end-9">
+          <!-- <input type="email"> -->
           <button type="submit" id="footer-btn">Sign-up</button>
-        </div> -->
-      sign-up</div>
+        </div>
+      </div>
 
       <nav id="footer-nav" class="grid-con">
-        <div id="support" class="box m-col-start-3 m-col-end-4">
+        <div id="support" class="box m-col-start-3 m-col-end-5">
           <!-- <ul>
             <li><a href="#">Shipping policy</a></li>
             <li><a href="#">Return & exchange</a></li>
             <li><a href="#">Product support</a></li>
           </ul>  -->
         support</div>   
-        <div id="About-us" class="box m-col-start-6 m-col-end-7">
+        <div id="about-us" class="box m-col-start-6 m-col-end-8">
           <!-- <ul>
             <li><a href="#">Privacy policy</a></li>
             <li><a href="#">Cookie policy</a></li>
             <li><a href="#">Terms & conditions</a></li>
           </ul>  -->
         About-us</div> 
-        <div id="Contact-us" class="box m-col-start-9 m-col-end-10">
+        <div id="contact-us" class="box col-span-full m-col-start-9 m-col-end-11">
           <!-- <p>519-719-1993</p><br>
           <p>Monday- Friday<br>8:30am - 5:30pm</p> -->
         Contact</div> 
 
       </nav>
 
-      <a class="box col-start-1 col-end-2 m-col-start-1 m-col-end-3" href="#"><p id="copyright">2023copyright©Loop</p></a>
+      <div class="grid-con">
 
-      <div id="social-con" class="box col-start-3 col-end-4 m-col-start-10 m-col-end-12">
-        <!-- <ul>
-          <li><a href="#"><img src="images/twitter.svg" alt=""></a></li>
-          <li><a href="#"><img src="images/in.svg" alt=""></a></li>
-          <li><a href="#"><img src="images/insta.svg" alt=""></a></li>
-        </ul> -->
-      social media icon</div>
+        <a  class="box col-start-1 col-end-3 m-col-start-1 m-col-end-7" href="#"><p id="copyright">2023copyright©Loop</p></a>
+        <div id="social-con" class="box col-start-3 col-end-4 m-col-start-10 m-col-end-12">
+          <!-- <ul>
+            <li><a href="#"><img src="images/twitter.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/in.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/insta.svg" alt=""></a></li>
+          </ul> -->
+        social media icon</div>
+      </div>
     </footer>
     <!-- Loads <model-viewer> for browsers: -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
