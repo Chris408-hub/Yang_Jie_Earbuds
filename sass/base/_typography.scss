@@ -1,4 +1,4 @@
-// @use '../abstracts/variables' as v;
+@use '../abstracts/variables' as v;
 
 // body {
 //     font-family: v.$body-font-family;
@@ -8,3 +8,10 @@
     
 // }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}

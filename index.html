@@ -12,38 +12,39 @@
   </head>
   <body>
     <header id="main-header" class="grid-con" >
-      <div id="logo" class="box col-start-1 col-end-2 m-col-start-1 m-col-end-3 xl-col-start-1 xl-col-end-2">
-      <!-- <a href="index.html"><img src="" alt="logo"></a> -->
-      logo</div>
-      <nav id="main-nav" class="box col-start-4 col-end-4 m-col-start-10 m-col-end-12">
-      <!-- <h2 class="hidden">Main Navigation</h2>
+      <div id="logo" class="col-start-1 col-end-2 m-col-start-1 m-col-end-3 xl-col-start-1 xl-col-end-2">
+      <a href="index.html"><img src="images/LOGO.svg" alt="logo"></a>
+      </div>
+      <nav id="main-nav" class="col-start-4 col-end-4 m-col-start-10 m-col-end-12">
+      <h2 class="hidden">Main Navigation</h2>
+      <button id="button"></button>
       <div id="burger-con">
           <ul id="burger-menu">
-              <li><a href="find.html"><img src="" alt="search"></a></li>
-              <li><a href="shop.html"><img src="" alt="shopping cart"></a></li>
-              <li><a href="account.html"><img src="" alt="account"></a></li>
+              <li><a href="find.html"><img src="images/search.svg" alt="search"></a></li>
+              <li><a href="shop.html"><img src="images/shopping-cart.svg" alt="shopping cart"></a></li>
+              <li><a href="account.html"><img src="images/account.svg" alt="account"></a></li>
           </ul>
-       </div> -->       
-      menu</nav>
+       </div>        
+      </nav>
     </header>
 
-    <section id="hero" class="box full-width-grid-con">
-      <h2>products images</h2>
-      <!-- <img src=""> -->
+    <section id="hero" class="grid-con">
+      <h2 class="hidden">products images</h2>
+      <img src="images/hero.png" alt="product image" class="col-span-full m-col-span-full xl-col-span-full">
     </section>
 
     <section id="video" class="grid-con">
       <h2 class="hidden">video</h2>
-      <h2 class="box col-span-full m-col-span-full xl-col-start-2 xl-col-end-5">Discover LOOP</h2>
-      <div id="video-con" class="box col-span-full m-col-span-full xl-col-start-6 xl-col-end-12">
-        <!-- <video src="video/" controls></video> -->
-      video</div>
+      <h2 class="col-span-full m-col-span-full xl-col-start-2 xl-col-end-5">Discover LOOP</h2>
+      <div id="video-con" class="col-span-full m-col-span-full xl-col-start-6 xl-col-end-12">
+        <video src="video/" controls></video>
+      </div>
     </section>
 
     <section id="hot-spot" class="grid-con">
-      <h2 class="box col-span-full m-col-start-1 m-col-end-10 xl-col-start-2 xl-col-end-9">Take a look around the LOOP headphones</h2>
+      <h2 class="col-span-full m-col-start-1 m-col-end-10 xl-col-start-2 xl-col-end-9">Take a look around the LOOP headphones</h2>
       <!-- <model-viewer> HTML element -->
-      <div class="box col-span-full">
+      <div class="col-span-full">
         <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
           <button class="Hotspot" slot="hotspot-1" data-position="-149.33284568722837m 252.49204696555853m 9.621595544963554m" data-normal="-0.012088690866540611m 0.9999268393103505m 0.00042376874069181744m" data-visibility-attribute="visible">
           <div class="HotspotAnnotation" id="hotspot-1"></div></button>
@@ -59,26 +60,37 @@
         </model-viewer> 
       </div>
 
-      <div id="features" class="box col-span-full">
-        <!-- <p>High-Quality Sound</p><div class="vertical-line"></div>
+      <div id="features" class="col-span-full">
+        <p>High-Quality Sound</p><div class="vertical-line"></div>
         <p>Active Noise Cancellation</p><div class="vertical-line"></div>
-        <p>Waterproof Design</p> -->
-      features</div>
+        <p>Waterproof Design</p>
+      </div>
     </section>  
     
     <section id="x-ray">
       <h2 class="hidden">products x-ray slider</h2>
-      <div id="img-x-ray" class="box full-width-grid-con">
-        <img src="" alt="x-ray">
+      <div id="mobile-tablet-view">
+          <!-- <img src="images/x-ray-bottom.png">
+          <img src="images/x-ray-top.png"> -->
+      </div>
+      <div id="outerShell">
+          <div id="imageCon">
+              <!-- xray version -->
+              <div class="slideImage image-right"></div>
+              <!-- rendered version -->
+              <div class="slideImage image-left"></div>
+              <!-- drag bar -->
+              <div class="slideImage image-drag"></div>
+          </div>
       </div>
       <div id="x-ray-intro">
         <div id="chip" class="grid-con">
-          <img src="" alt="chip" class="box col-start-1 col-end-2 m-col-start-3 m-col-end-5">
-          <p class="box col-start-2 col-end-5 m-col-start-6 m-col-end-12">chip intro</p>
+          <img src="" alt="chip" class="col-start-1 col-end-2 m-col-start-3 m-col-end-5">
+          <p class="col-start-2 col-end-5 m-col-start-6 m-col-end-12">chip intro</p>
         </div>
         <div id="battery" class="grid-con">
-          <img src="" alt="battery" class="box col-start-1 col-end-2 m-col-start-3 m-col-end-5">
-          <p class="box col-start-2 col-end-5 m-col-start-6 m-col-end-12">battery intro</p>
+          <img src="" alt="battery" class="col-start-1 col-end-2 m-col-start-3 m-col-end-5">
+          <p class="col-start-2 col-end-5 m-col-start-6 m-col-end-12">battery intro</p>
         </div>
 
       </div>
@@ -86,60 +98,90 @@
 
     <section id="animation" class="grid-con">
 
-      <div id="left-text" class="box col-start-1 col-end-2 m-col-start-1 m-col-end-5">left-text<p></p><br><p></p><br><p></p></div>
-      <div class="box col-start-2 col-end-3 m-col-start-5 m-col-end-8">
-        <!-- <img src="" alt=""> -->
-      img</div>
-      <div id="right-text" class="box col-start-3 col-end-4 m-col-start-8 m-col-end-12">right-text<p></p><br><p></p><br><p></p></div>
+      <div id="left-text" class="col-start-1 col-end-2 m-col-start-1 m-col-end-5">left-text<p></p><br><p></p><br><p></p></div>
+      <div class="product col-start-2 col-end-3 m-col-start-5 m-col-end-8">
+        <img src="images/earbuds-front.png" alt="earbuds with case" id="productImage">
+      </div>
+      <div id="right-text" class="col-start-3 col-end-4 m-col-start-8 m-col-end-12">right-text<p></p><br><p></p><br><p></p></div>
  
     </section>
     
     <footer id="footer">
       <div id="sign-up"  class="grid-con">
         <p></p>
-        <div id="email" class="box col-span-full m-col-start-4 m-col-end-9">
-          <!-- <input type="email"> -->
+        <div id="email" class="col-span-full m-col-start-4 m-col-end-9">
+          <input type="email">
           <button type="submit" id="footer-btn">Sign-up</button>
         </div>
       </div>
 
       <nav id="footer-nav" class="grid-con">
-        <div id="support" class="box m-col-start-3 m-col-end-5">
-          <!-- <ul>
+        <div id="support" class="m-col-start-3 m-col-end-5">
+          <h2>support</h2>
+          <ul>
             <li><a href="#">Shipping policy</a></li>
             <li><a href="#">Return & exchange</a></li>
             <li><a href="#">Product support</a></li>
-          </ul>  -->
-        support</div>   
-        <div id="about-us" class="box m-col-start-6 m-col-end-8">
-          <!-- <ul>
+          </ul> 
+        </div>   
+        <div id="about-us" class="m-col-start-6 m-col-end-8">
+        <h2>About-us</h2>
+          <ul>
             <li><a href="#">Privacy policy</a></li>
             <li><a href="#">Cookie policy</a></li>
             <li><a href="#">Terms & conditions</a></li>
-          </ul>  -->
-        About-us</div> 
-        <div id="contact-us" class="box col-span-full m-col-start-9 m-col-end-11">
-          <!-- <p>519-719-1993</p><br>
-          <p>Monday- Friday<br>8:30am - 5:30pm</p> -->
-        Contact</div> 
+          </ul> 
+        </div> 
+        <div id="contact-us" class="col-span-full m-col-start-9 m-col-end-11">
+        <h2>Contact-us</h2>
+          <p>519-719-1993</p><br>
+          <p>Monday- Friday<br>8:30am - 5:30pm</p>
+        </div> 
 
       </nav>
 
       <div class="grid-con">
 
-        <a  class="box col-start-1 col-end-3 m-col-start-1 m-col-end-7" href="#"><p id="copyright">2023copyright©Loop</p></a>
-        <div id="social-con" class="box col-start-3 col-end-4 m-col-start-10 m-col-end-12">
-          <!-- <ul>
+        <a  class="col-start-1 col-end-3 m-col-start-1 m-col-end-7" href="#"><p id="copyright">2023copyright©Loop</p></a>
+        <div id="social-con" class="col-start-3 col-end-4 m-col-start-10 m-col-end-12">
+          <ul>
             <li><a href="#"><img src="images/twitter.svg" alt=""></a></li>
             <li><a href="#"><img src="images/in.svg" alt=""></a></li>
-            <li><a href="#"><img src="images/insta.svg" alt=""></a></li>
-          </ul> -->
-        social media icon</div>
+            <li><a href="#"><img src="images/instagram.svg" alt=""></a></li>
+          </ul>
       </div>
     </footer>
+
     <!-- Loads <model-viewer> for browsers: -->
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
     <script src="js/main.js"></script>
+
+
+    <!-- scorll animation for earbuds -->
+    <script>
+      // 创建动画
+      gsap.from("#productImage", {
+          x: -1000,  // 初始状态
+          opacity: 0,
+          duration: 1
+      });
+
+      // 添加滚动触发
+      ScrollTrigger.create({
+          trigger: ".product",  // 滚动触发的元素
+          start: "top center",  // 触发开始位置
+          end: "bottom center",  // 触发结束位置
+          animation: gsap.to("#productImage", {
+              x: 800,  // 滚动后的状态
+              opacity: 1,
+              duration: 1
+          })
+      });
+    </script>
+
   </body>
 </html>

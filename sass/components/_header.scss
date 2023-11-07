@@ -1,4 +1,88 @@
-@media screen and (min-width: 768px){
+#main-header{
+    background-color: #3E2259;
+
+
+
+
+        #logo{
+        /* height: 3.75rem; */
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+            }
+
+        #main-nav button {
+        width: 3.125rem;
+        height: 2.1875rem;
+        background: url(../images/hamburger.svg) no-repeat center;
+        margin-top: 2.1875rem;
+        margin-bottom: 1.5625rem;
+        transition: all .5s ease;
+        border: 0;
+        }
+
+        #main-nav button.expanded {
+        transform: rotate(90deg);
+        /* z-index: 3;
+        position: absolute; */
+        }
+
+        #burger-con {
+        margin-top: 2.5rem;
+        margin-bottom: 1.25rem;
+        display:none;
+        }
+
+        #burger-con.slide-toggle {
+        display: block;
+        /* height: 100vh;
+        width: 100vw;
+        background:rgba() ;
+        z-index:2;
+        position:absolutely;
+        top:0;
+        left:0 */
+        }
+
+        #main-nav ul {
+        list-style: none;
+        padding: 0;
+        margin-left: -9.375rem;
+        }
+
+        #main-nav ul li a {
+        display: block;
+        padding: 0.625rem;
+        width: 8.3rem;
+        font-size:1.25rem;
+        text-align: center;
+        color: #fff;
+        }
+}
+
+
+
+
+
+// @media screen and (max-width: 767px){
+    
+//     #burger-menu{
+//         display: none;
+//     }
+    
     
 
-}
+    
+// }
+
+
+
+
+
+// @media screen and (min-width: 768px){
+        
+//     #burger-con{
+//     display: none;
+//     }
+
+
+// }

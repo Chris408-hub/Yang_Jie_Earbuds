@@ -1,6 +1,8 @@
 (() => {
   //console.log("IIFE Fired");
   //variables
+  const button = document.querySelector('#button');
+	const burgerCon = document.querySelector('#burger-con');
   const model = document.querySelector("#model");
   const hotspots = document.querySelectorAll(".Hotspot");
 
@@ -30,6 +32,16 @@
 
 
   //functions
+
+//hamburger menu
+	function hamburgerMenu() {
+		burgerCon.classList.toggle('slide-toggle');
+		button.classList.toggle('expanded');
+	};
+
+
+
+//hot spot
   function modelLoaded() {
     console.log(hotspots);
     hotspots.forEach(hotspot => {
@@ -75,13 +87,61 @@
     gsap.to(selected, 1, { autoAlpha: 0 });
   }
 
-  //Event Listener
+//x-ray
+  let imageCon = document.querySelector('#imageCon'),
+        drag = document.querySelector('.image-drag'),
+        left = document.querySelector('.image-left'),
+        dragging = false,
+        min = 0,
+        max = imageCon.offsetWidth;
+    
+    
+    function onDown() {
+        dragging = true;
+        console.log('on down called');
+    }
+
+    function onUp() {
+        dragging = false;
+    }
+
+    function onMove(event) {
+        if (dragging === true) {
+            let x = event.clientX - imageCon.getBoundingClientRect().left;
+     
+            if (x < min) {
+                x = min;
+            } else if (x > max) {
+                x = max-10;
+                
+            }
+            drag.style.left = x + 'px';
+            left.style.width = x + 'px';
+        }
+
+        
+        
+    }
+    
+  //event listeners
+  
+//x-ray
+  drag.addEventListener('mousedown', onDown);
+  document.body.addEventListener('mouseup', onUp);
+  document.body.addEventListener('mousemove', onMove);
+  
+//hamburger menu
+  button.addEventListener('click', hamburgerMenu, false);
+
+  //hot spot
   model.addEventListener("load", modelLoaded);
 
   hotspots.forEach(function (hotspot) {
     hotspot.addEventListener("mouseover", showInfo);
     hotspot.addEventListener("mouseout", hideInfo);
   });
+
+
 })();
 
 // In this version, the event listeners use regular functions instead of arrow functions, so the "this" keyword inside the event listeners will refer to the DOM element that triggered the event.

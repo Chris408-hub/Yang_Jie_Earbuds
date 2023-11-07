@@ -1,0 +1,56 @@
+#outerShell {
+    display: none;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width: 768px){
+
+#mobile-tablet-view {
+    display: none;
+}
+
+#outerShell {
+    display: block;
+    max-width: 1920px;
+    border: solid 1px #3E2259;
+}
+
+#imageCon {
+    position: relative;
+    max-width: 1920px;
+    height: 50vh;
+}
+
+.slideImage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 50vh;
+}
+
+.image-right {
+    background: url(../images/x-ray-bottom.png) no-repeat;
+    background-size:100%;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.image-left {
+    background: url(../images/x-ray-top.png) no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    width: 50%;
+    background-attachment: fixed;
+}
+
+.image-drag {
+    background-color: #3E2259;
+    left: 50%;
+    width: 10px;
+    cursor: pointer;
+}
+}
+    
+
+
