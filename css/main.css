@@ -1,3 +1,11 @@
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 model-viewer {
   width: auto;
   max-width: 1920px;
@@ -84,13 +92,72 @@ model-viewer > #ar-prompt > img {
   animation: circle 4s linear infinite;
 }
 
+#main-header {
+  background-color: #3E2259;
+}
+#main-header #logo {
+  /* height: 3.75rem; */
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+#main-header #main-nav button {
+  width: 3.125rem;
+  height: 2.1875rem;
+  background: url(../images/hamburger.svg) no-repeat center;
+  margin-top: 2.1875rem;
+  margin-bottom: 1.5625rem;
+  transition: all 0.5s ease;
+  border: 0;
+}
+#main-header #main-nav button.expanded {
+  transform: rotate(90deg);
+  /* z-index: 3;
+  position: absolute; */
+}
+#main-header #burger-con {
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  display: none;
+}
+#main-header #burger-con.slide-toggle {
+  display: block;
+  /* height: 100vh;
+  width: 100vw;
+  background:rgba() ;
+  z-index:2;
+  position:absolutely;
+  top:0;
+  left:0 */
+}
+#main-header #main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin-left: -9.375rem;
+}
+#main-header #main-nav ul li a {
+  display: block;
+  padding: 0.625rem;
+  width: 8.3rem;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #fff;
+}
+
 #video {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
+#hot-spot img {
+  width: 200px;
+  height: 150px;
+}
+
 #features {
-  display: inline-block;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
 }
 #features .vertical-line {
   width: 2px;
@@ -98,12 +165,66 @@ model-viewer > #ar-prompt > img {
   background-color: #000;
 }
 
+#outerShell {
+  display: none;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  #mobile-tablet-view {
+    display: none;
+  }
+  #outerShell {
+    display: block;
+    max-width: 1920px;
+    border: solid 1px #3E2259;
+  }
+  #imageCon {
+    position: relative;
+    max-width: 1920px;
+    height: 50vh;
+  }
+  .slideImage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 50vh;
+  }
+  .image-right {
+    background: url(../images/x-ray-bottom.png) no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .image-left {
+    background: url(../images/x-ray-top.png) no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    width: 50%;
+    background-attachment: fixed;
+  }
+  .image-drag {
+    background-color: #3E2259;
+    left: 50%;
+    width: 10px;
+    cursor: pointer;
+  }
+}
+#animation {
+  margin-top: 100px;
+}
+
+#footer {
+  margin-top: 150px;
+}
+
+#social-con ul {
+  display: flex;
+  justify-content: space-around;
+}
+
 @media screen and (max-width: 767px) {
   #footer-nav #support, #footer-nav #about-us {
     display: none;
   }
-}
-img {
-  width: 300px;
-  height: 150px;
 }

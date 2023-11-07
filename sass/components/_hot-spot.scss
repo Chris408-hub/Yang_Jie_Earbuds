@@ -1,16 +1,26 @@
 
 
-
+#hot-spot{
+    img{
+        width: 200px;
+        height: 150px;
+    }
+}
 
 
 #features{
+    margin-top: 100px;
+    margin-bottom: 100px;
 
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
     .vertical-line {
         width: 2px; 
         height: 100px; 
         background-color: #000; 
     }
+
+    
 }
 
 
