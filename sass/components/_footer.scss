@@ -1,28 +1,129 @@
+@use '../abstracts/variables' as v;
+
 #footer{
-    margin-top: 150px;
-}
+    background-color: v.$primary-color;
+    color: #fff;
+    margin-top: 10px;
+    position: relative;
+    height: 150px;
+    bottom: -470px;
 
 
+    #sign-up{
+        position: absolute;
+        top: -10%;
+        left:20%;
+        width: 290px;
+        height: 65px;
+        border-radius:200px;
+        background-color: v.$primary-color;
+        border: 1px solid v.$second-color;
+
+        p{
+            margin-top: 15px;
+            margin-left: 15%;
+        }
+        #email{
+            width: 150px;
+            height: 20px;
+            margin-left: 15%;
+            display: flex;
+            align-items: center;;
+            // border: 1px solid v.$second-color;
 
 
+            input{
+                width: 80%;
+                height: 100%;
+                border-radius: 200px;
 
+            }
+            #footer-btn{
+                font-size: 10px;
+                width: 40%;
+                height: 100%;
+                border-radius: 200px;
+                margin-left: -15%;
+                background-color: v.$second-color;
+                color: #fff;
+                border: 1px solid v.$primary-color;
+                &:hover{
+                background-color: v.$primary-color;
+                border: 1px solid v.$second-color;
+                }
+            }
+        }
 
-#social-con ul{
-    display: flex;
+    }
 
-    justify-content:space-around;
-}
-
-
-
-
-
-
-@media screen and (max-width:767px) {
     
-#footer-nav{
-    #support, #about-us{
-        display: none;
+
+    #footer-bottom{
+      background-color: v.$primary-color;
+      color: #fff;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+        p{
+            order: 1;
+            color: #fff;
+            font-size: 8px;
+        }
+        #social-con ul{
+            order: 2;
+            display: flex;
+            justify-content:space-around;
+        }
+
+    }
+
+}
+
+@media screen and (min-width:768px){
+    #footer{
+        height: 300px;
+
+        #sign-up{
+            width: 500px;
+            height: 100px;
+            top: -10%;
+            left:25%;
+
+            #email{
+                width: 200px;
+                height: 20px;
+            }
+
+        }
+        #footer-bottom p{
+            font-size: 20px;
+        }
+
+
+
     }
 }
+
+
+@media screen and (min-width:1920px){
+    #footer{
+        height: 500px;  
+        #sign-up{
+            width: 900px;
+            height: 165px;
+            #email{
+                width: 370px;
+                height: 50px;
+            }
+        }
+
+     }
+
+
+
 }
+

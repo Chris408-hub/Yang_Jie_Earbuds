@@ -1,6 +1,34 @@
+@use '../abstracts/variables' as v;
+
+h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 #outerShell {
     display: none;
-    margin: 0 auto;
+
+
+}
+
+#x-ray-intro{
+margin-top: 30px;
+
+    h3{
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    p{
+        display: none;
+    }
+    #battery{
+        margin-top: 30px;
+    }
+    img{
+        margin: 40px auto;
+    }
+
 }
 
 
@@ -12,36 +40,37 @@
 
 #outerShell {
     display: block;
-    max-width: 1920px;
-    border: solid 1px #3E2259;
+    max-width: 1200px;
+    border: solid 1px v.$primary-color;
+
 }
 
 #imageCon {
     position: relative;
-    max-width: 1920px;
-    height: 50vh;
+    max-width: 1200px;
+    height: 720px;
 }
 
 .slideImage {
     position: absolute;
     left: 0;
     right: 0;
-    height: 50vh;
+    height: 100%;
 }
 
 .image-right {
     background: url(../images/x-ray-bottom.png) no-repeat;
-    background-size:100%;
-    background-position: center center;
-    background-attachment: fixed;
+    background-size:auto;
+    // background-position: center center;
+    // background-attachment: fixed;
 }
 
 .image-left {
     background: url(../images/x-ray-top.png) no-repeat;
-    background-size: 100%;
-    background-position: center center;
+    background-size: auto;
+    // background-position: center center;
     width: 50%;
-    background-attachment: fixed;
+    // background-attachment: fixed;
 }
 
 .image-drag {
@@ -51,6 +80,17 @@
     cursor: pointer;
 }
 }
-    
+
+
+@media screen and (min-width: 1920px){
+
+#x-ray-intro{
+    p {
+    display: block;
+    font-size: 18px;
+    }
+}
+
+}
 
 

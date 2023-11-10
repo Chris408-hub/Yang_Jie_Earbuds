@@ -3,6 +3,35 @@
 // @include m.fontFace(cantarellregular, "../fonts/cantarel_regular-webfont");
 
 
+h2{
+  font-size: 12px;
+  font-weight: 400px;
+}
 
+p{
+  font-size: 8px;
+}
+
+@media screen and (min-width:768px) {
+    h2{
+    font-size: 20px;
+    font-weight: 400px;
+    }
+
+    p{
+      font-size: 15px;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    h2 {
+      font-size: 30px;
+      font-weight: 500px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+}
 
 
