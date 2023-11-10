@@ -1,6 +1,8 @@
 # Yang_Jie_Earbuds
 
 This is an earbuds promotion website.
+Loop Headphones: 
+Immerse Yourself in Sound Excellence with Loop Headphones – Where Music Meets Elegance!
 
 ## Contributing
 
