@@ -129,7 +129,7 @@ const infoBoxes = [
             start: "top center",
             end:"bottom center"
 		}, 
-		x:300, ease:Bounce.easeOut
+      x: 300, ease: Bounce.easeOut
 		});
 
 
