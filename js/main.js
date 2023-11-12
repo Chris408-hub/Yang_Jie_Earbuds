@@ -121,7 +121,7 @@ const infoBoxes = [
         link.addEventListener("click", scrollLink);
     });
 
-    gsap.to("#productImage", 3, 
+    gsap.to("#productImage",3,
 		{scrollTrigger: {
 			trigger: "#productImage",
             toggleActions: "restart pause reverse none",
@@ -129,7 +129,7 @@ const infoBoxes = [
             start: "top center",
             end:"bottom center"
 		}, 
-      x: 300, ease: Bounce.easeOut
+      x: "20%", ease: Bounce.easeOut
 		});
 
 
@@ -228,4 +228,3 @@ const infoBoxes = [
 
 })();
 
-// In this version, the event listeners use regular functions instead of arrow functions, so the "this" keyword inside the event listeners will refer to the DOM element that triggered the event.
